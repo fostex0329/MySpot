@@ -156,7 +156,7 @@ export function SectionCards() {
     let isCancelled = false;
     const controller = new AbortController();
     let watchId: number | null = null;
-    let fallbackTimer: ReturnType<typeof setTimeout> | null = null;
+    let fallbackTimer: number | null = null;
     let bestPosition: GeolocationPosition | null = null;
     let hasFetched = false;
 
